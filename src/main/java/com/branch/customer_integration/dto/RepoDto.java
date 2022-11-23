@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Repo {
+public class RepoDto {
     private String name;
     private String url;
 }

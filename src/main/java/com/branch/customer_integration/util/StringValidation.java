@@ -1,8 +1,11 @@
 package com.branch.customer_integration.util;
 
-public class InputValidation {
+import org.springframework.stereotype.Component;
 
-    private Boolean checkIfInputStringIsValid(String input) {
+@Component
+public class StringValidation {
+
+    public Boolean checkIfInputStringIsValid(String input) {
         return input.isEmpty() && input.isBlank();
     }
 }

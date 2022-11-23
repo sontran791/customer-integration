@@ -1,14 +1,15 @@
-package com.branch.customer_integration.configuration;
+package com.branch.customer_integration.mapping;
 
+import com.branch.customer_integration.dto.Github.UserResponseDto;
 import com.branch.customer_integration.dto.UserDto;
-import com.branch.customer_integration.dto.UserRepoResponseDto;
-import com.branch.customer_integration.dto.UserResponseDto;
+import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ModelMapperConfig {
+@AllArgsConstructor
+public class UserMapping {
 
     @Bean
     public ModelMapper modelMapper() {

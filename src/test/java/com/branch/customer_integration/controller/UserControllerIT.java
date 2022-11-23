@@ -32,7 +32,7 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class UserControllerTest {
+class UserControllerIT {
     @MockBean
     private GithubUsersFeign githubUsersFeign;
 
@@ -45,7 +45,6 @@ class UserControllerTest {
     @Test
     void getAllUserRepos() {
         // Given
-
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(GITHUB_DATETIME_FORMAT, Locale.US);
         LocalDateTime localDateTime = LocalDateTime.parse("2011-01-25T18:44:36Z", formatter);
 

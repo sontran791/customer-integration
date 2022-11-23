@@ -1,7 +1,7 @@
 package com.branch.customer_integration.exception;
 
-public class NoUserRepoFoundException extends Exception {
-    public NoUserRepoFoundException(String message) {
+public class NoUserFoundException extends Exception {
+    public NoUserFoundException(String message) {
         super(message);
     }
 }
