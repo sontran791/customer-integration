@@ -21,8 +21,7 @@ public class HttpResponse {
     private HttpStatus httpStatus;
     private String reason;
     private String message;
-
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "mm-dd-yyyy hh:mm:ss", timezone = "America/Chicago")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy HH:mm:ss", timezone = "America/Chicago")
     private Date timeStamp;
     private UserDto user;
 
